@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.home{
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    padding: 0 5%;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > video{
+    width: 6%;
+    border-radius: 50%;
+    opacity: 50%;
+}
+
+nav > ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 1rem;
+}
+
+nav > ul li a{
+    color: whitesmoke;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+nav > ul li a:hover{
+    color: darkgray;
+}
+
+
+.bg-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.item{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.item h1{
+    color: white;
+    opacity: 50%;
+    font-size: 60px;
+    text-align: center;
+    width: 60%;
+    
+    justify-content: center;
+}
+
+.home, .About , .Services , .Footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    /*  */
+}
+.home,.About, .Services{
+    height: 100vh;
+}
+
+.About{
+    background-color: gainsboro;
+}
+
+.item1 {
+    width: 80%;
+    display: grid;
+    grid-template: 2fr 3fr 12fr / 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 150px 8%;
+    background-color: ghostwhite;
+}
+.item1 h1{
+    font-size: 3.5rem;
+    padding-top: 50px;
+    padding-bottom: 10px;
+   
+}
+.item1 .headingp{
+    color: #606C5D;
+    font-size: 2rem;
+    padding-bottom: 0;
+}
+.item1 .abouttext{
+    font-size: 1.5rem;
+    color: #606C5D;
+    width: 85%;
+}
+
+.Services{
+    background-color: black;
+    height: 100vh;
+}
+
+.item2{
+    display: grid;
+    grid-template: 1fr 2fr / 1fr 1fr 1fr;
+    gap: 10px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 50px 5%;
+    width: 85%;
+    
+
+}
+
+.item2 > h1{
+    grid-column: span 3;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 100px;
+    color: white;
+}
+.item2 div{
+    text-align: center;
+    width: 100%;
+    background-color: #0d0d11e7;
+    border-radius: 5%;
+    grid-column: span 1;
+}
+.item2 div>i{
+    color: rgb(213, 38, 73);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.item2 div>h2{
+    color: white;
+    margin: 10px 0 15px;
+}
+.item2 div>p{
+   font-weight: bold;
+   padding: 0 62px;
+    margin-bottom: 20px;
+    color: #393646;
+}
+
+.item2 div>button{
+    background-color: rgb(213, 38, 73);
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+}
+.item2 div> button a{
+    text-decoration: none;
+    color: white;
+}
+.item2 div>button:hover{
+    background-color: crimson;
+}
+.Footer{
+    background-color: gainsboro;
+}
+
+.item3{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 10px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 50px 5%;
+    width: 85%;
+}
+
+.item3 h2{
+    grid-column: span 3;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 20px;
+}
+
+.item3 div{
+    grid-column: span 3;
+    text-align: center;
+}
+
+.item3 div a>i{
+    padding: 0 10px 30px;
+    color: #606C5D;
+}
+
+.item3 div>p{
+    padding: 10px 0;
+}
+
+.item3 div a>i:hover{
+    color: black;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .bg-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .bg-video{
+        width: auto;
+        height: 100%;
+    }
+}
+@media (max-width: 1300px) {
+    .Services{
+        height: auto;
+        width: auto;
+    }
+    .item2 div, .item2 h1{
+        grid-column: span 3;
+        width: 100%;
+    }
+}  
+
+@media (max-width: 740px){
+    nav > ul li a{
+        font-size: 85%;
+    }
+    nav > ul li{
+        margin-left: 10px;
+    }
+    .item h1, .item1 h1, .item2>h1, .item3> h2{
+        font-size: 2rem;
+    }
+    .item1 .headingp{
+        font-size: 1.3rem;
+    }
+    .item1 .abouttext{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .item2>div h2{
+        font-size: 1.5rem;
+    }
+    .item2 div>p{
+        padding: 0 35px
+    }
+    
+}
+
+@media (orientation: Landscape) and (max-height: 400px){
+    .item1{
+        padding: 10px 8%;
+    }
+}
+

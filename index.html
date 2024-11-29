@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+<title>Abhay Verma</title>
+    
+</head>
+<body>
+    <div class="home" id="homepage">
+        <video autoplay loop muted plays-inline class="bg-video">
+            <source src="background.mp4" type="video/mp4">
+        </video>
+        <nav class="navbar">
+            <video autoplay loop muted plays-inline >
+                <source src="AV.mp4" class="logo" type="video/mp4">
+            </video>
+            <ul>
+                <li><a href="#homepage">Home</a></li>
+                <li><a href="#aboutpage">About Us</a></li>
+                <li><a href="#servicepage">Services</a></li>
+                <li><a href="#footerpage">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="item">
+            
+            <h1><span class="headtext"></span> </h1>
+                
+        </div>
+    </div>
+    <div class="About" id="aboutpage">
+        <div class="item1">
+            <h1>About Me</h1>
+            <p class="headingp">Developer & Designer</p>
+            <p class="abouttext">I'm a frontend web developer. I can provide clean code and pixel perfect design. Currently, I'm working with some backend technologies including Node, Express, React and MongoDB.</p>
+        </div>
+    </div>
+    <div class="Services" id="servicepage">
+        <div class="item2">
+            <h1>Our Services</h1>
+            <div class="div1">
+                <i class="fa-solid fa-bars fa-2xl fa-fade"></i>
+                <h2>Web Development</h2>
+                <p>Every website should be built with two primary goals. Firstly, it needs to be well designed and work across all devices. Secondly, it needs to be fast as possible.</p>
+                <button><a href="https://developer.mozilla.org/en-US/docs/Learn">Read More</a></button>
+            </div>
+            <div>
+                <i class="fa-regular fa-user fa-2xl fa-fade"></i>
+                <h2>Web Development</h2>
+                <p>Every website should be built with two primary goals. Firstly, it needs to be well designed and work across all devices. Secondly, it needs to be fast as possible.</p>
+                <button><a href="https://developer.mozilla.org/en-US/docs/Learn">Read More</a></button>
+            </div>
+            <div>
+                <i class="fa-regular fa-bell fa-2xl fa-fade"></i>
+                <h2>Web Development</h2>
+                <p>Every website should be built with two primary goals. Firstly, it needs to be well designed and work across all devices. Secondly, it needs to be fast as possible.</p>
+                <button><a href="https://developer.mozilla.org/en-US/docs/Learn">Read More</a></button>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>
+    <footer class="Footer" id="footerpage">
+        <div class="item3">
+            <h2>Get In Touch</h2>
+            <div>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den"><i class="brand fa-brands fa-twitter fa-2xl fa-bounce"></i></a>
+                <a href="https://www.facebook.com/"><i class="brand fa-brands fa-facebook fa-2xl fa-bounce"></i></a>
+                <a href="www.linkedin.com/in/abhayvermacs/"><i class="brand fa-brands fa-linkedin fa-2xl fa-bounce"></i></a>
+                <p>Copyright © 2023</p>
+                <p>Made with ❤ by Abhay Verma</p>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".headtext",{
+            strings: ["Hi, I'm Abhay.","A Web Developer.","I design and build user interfaces."],
+            loop: true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            badkDelay : 5000
+        })
+    </script>
+
+</body>
+</html>
